@@ -1,5 +1,5 @@
 const getCount = (str) => {
-	return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0;
+	return (str.match(/[aeiou]/g) || []).length;
 };
 
 module.exports = getCount;
